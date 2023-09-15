@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC 
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="gradient-background">
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1 class="fw-light text-white m-0"></h1>
+        <div class="btn-group my-5">
+
+        </div>
+      </div>
+    </div>
+
+    <p>ФИО:Болонин Алексей Алексеевич</p>
+    <p>Всем привет!</br>
+      Являюсь студентом ЮУрГУ,мне 20 лет.</br>
+      И я хочу попасть на курс по Web Development</br>
+      <button class="button" onclick="MoreInfo()">Больше информации</button>
+
+      <p id="information" class="info">
+        Навыки:</br>
+        - Родился в городе Белорецк, закончил школу и сдал ЕГЭ,</br>
+        - поступил в ЮУрГУ на специальность "Прикладная математика и информатика".Сейчас живу и учусь в Челябинске;</br>
+        - Нравится процесс изучения новых предметов и языков программирования;</br>
+        - Работаю репетитором в онлайн школе.Преподаю математику и информатику школьникам.</br>
+        - Люблю работать в команде и заводить новые знакомства;</br>
+        - Знаю английский язык на уровне [B1]</br>
+        - С детства занимаюсь баскетболом.
+      </p>
+
+      <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+          <div class="slide">
+            <img src="image/lesha.jpg" />
+          </div>
+          <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+          <div class="slide">
+            <img src="image/we.jpg" />
+          </div>
+          <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+          <div class="slide">
+            <img src="image/us.jpg" />
+          </div>
+          <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-4" class="next">&#x203a;</label>
+          </div>
+        </li>
+
+        <script>
+          function MoreInfo() {
+            var info = document.getElementById("information");
+            if (info.classList.contains("info")) {
+              info.classList.remove("info");
+            } else {
+              info.classList.add("info");
+            }
+          }
+        </script>
+  </div>
